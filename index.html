@@ -223,8 +223,13 @@
   .buybox { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: clamp(1.5rem, 4vw, 2.25rem); }
   .buybox h2 { font-size: clamp(1.6rem, 3.4vw, 2.1rem); margin-bottom: 1.25rem; }
   .price { font-family: var(--font-display); font-weight: 700; font-size: 2.6rem; letter-spacing: -0.02em; margin: 1.5rem 0 1rem; line-height: 1; }
-  .price-old { color: var(--muted); font-size: .52em; font-weight: 500; text-decoration: line-through; vertical-align: .22em; margin-right: .25em; }
-  .offer-deadline { color: var(--accent); font-family: var(--font-display); font-size: .95rem; font-weight: 650; margin: .75rem 0 1.25rem; }
+  .price-old { color: var(--muted); font-size: .68em; font-weight: 650; text-decoration: line-through; vertical-align: .12em; margin-right: .3em; }
+  .btn .price-old { color: inherit; font-size: .9em; vertical-align: baseline; opacity: .82; }
+  .hero-offer { display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: .45rem .7rem; margin: 1.25rem 0 .85rem; padding: .75rem 1rem; border-left: 4px solid var(--accent); background: var(--soft); font-family: var(--font-display); }
+  .hero-offer-label { color: var(--accent); font-size: .82rem; font-weight: 750; letter-spacing: .07em; text-transform: uppercase; }
+  .hero-offer-price { font-size: 1.45rem; font-weight: 750; line-height: 1; }
+  .hero-offer-deadline { flex-basis: 100%; color: var(--accent); font-size: .92rem; font-weight: 650; }
+  .offer-deadline { color: var(--accent); font-family: var(--font-display); font-size: 1rem; font-weight: 650; margin: .75rem 0 1.25rem; }
   .offer-deadline strong { font-variant-numeric: tabular-nums; }
   .offer-label { color: var(--accent); font-family: var(--font-display); font-size: .82rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
   .naira { font-family: system-ui, "Segoe UI", Arial, sans-serif; font-weight: 600; margin-right: .05em; }
@@ -288,6 +293,11 @@
           <div class="trust">
             <div class="rating" role="img" aria-label="Rated 4.2 out of 5"><span class="stars" aria-hidden="true">★★★★★</span><span><strong>4.2</strong> rating</span></div>
             <div><strong>312+</strong> readers have bought it</div>
+          </div>
+          <div class="hero-offer" aria-label="Today-only offer">
+            <span class="hero-offer-label">Today-only offer</span>
+            <span class="hero-offer-price"><span class="price-old"><span class="naira">₦</span>15,000</span><span class="naira">₦</span>4,900</span>
+            <span class="hero-offer-deadline">Ends tonight in <strong data-offer-countdown>--:--:--</strong></span>
           </div>
           <a class="btn js-buy" id="hero-cta" href="https://tpjxlcjr.mychariow.co/prd_81vyu6x9/checkout">Get instant access: <span class="price-old"><span class="naira">₦</span>15,000</span> <span class="naira">₦</span>4,900</a>
           <p class="fine">Digital download. Read it privately on your phone.</p>
