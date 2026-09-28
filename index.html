@@ -29,9 +29,6 @@
   })(window, document, "clarity", "script", "ymv598j4tq");
 </script>
 <!-- End Microsoft Clarity -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Source+Serif+4:opsz,wght@8..60,400..700&display=swap" rel="stylesheet">
 <style>
   /* ---------- Tokens ---------- */
   :root {
@@ -52,8 +49,8 @@
     --paper: #FBFAFC;
     --paper-ink: #2A1B3D;
 
-    --font-display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, -apple-system, sans-serif;
-    --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --font-display: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
@@ -239,7 +236,7 @@
   .hero-offer-price { font-size: 1.45rem; font-weight: 750; line-height: 1; }
   .hero-offer-deadline { flex-basis: 100%; color: var(--accent); font-size: .92rem; font-weight: 650; }
   .offer-deadline { color: var(--accent); font-family: var(--font-display); font-size: 1rem; font-weight: 650; margin: .75rem 0 1.25rem; }
-  .offer-deadline strong { font-variant-numeric: tabular-nums; }
+  .hero-offer-price, .hero-offer-deadline, .offer-deadline strong { font-family: var(--font-display); }
   .offer-label { color: var(--accent); font-family: var(--font-display); font-size: .82rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
   .buybox .btn { display: block; width: 100%; }
 
